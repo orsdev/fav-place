@@ -22,7 +22,9 @@
     "react-hook-form": "^7.52.2",
     "react-native": "0.74.5",
     "yup": "^1.4.0",
-    "zustand": "^4.5.5"
+    "zustand": "^4.5.5",
+    "expo-camera": "~15.0.14",
+    "expo-image-picker": "~15.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native"
+import { PlaceForm } from "../components/places";
 
 const AddPlacesPage = () => {
     return (
-        <View>
-            <Text>Add places</Text>
-        </View>
+        <>
+           <PlaceForm />
+        </>
     )
 }
 
