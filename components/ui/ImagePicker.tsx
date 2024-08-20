@@ -38,7 +38,7 @@ export const ImagePicker = () => {
 
         setImage(null);
         // No permissions request is necessary for launching the image library
-        let result = await Picker.launchImageLibraryAsync({
+        let result = await Picker.launchCameraAsync({
             mediaTypes: Picker.MediaTypeOptions.All,
             allowsEditing: true,
             aspect: [16, 9],
