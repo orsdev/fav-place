@@ -2,7 +2,7 @@ import React from 'react'
 import { Controller, useForm } from 'react-hook-form';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
 import { Colors } from '../../constants';
-import { ImagePicker } from '../ui';
+import { ImagePicker, LocationPicker } from '../ui';
 
 export const PlaceForm = () => {
 
@@ -39,6 +39,7 @@ export const PlaceForm = () => {
                     )
                 }}
             />
+            <LocationPicker />
         </ScrollView>
     )
 };

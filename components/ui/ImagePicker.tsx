@@ -3,6 +3,7 @@ import { Alert, Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import * as Picker from 'expo-image-picker';
 import { Colors } from '../../constants';
 
+// TODO: To check IPhone camera, use expo, simulator won't work
 export const ImagePicker = () => {
     const [cameraPermissionInformation, requestPermission] =
         Picker.useCameraPermissions();

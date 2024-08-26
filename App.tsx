@@ -32,18 +32,23 @@ export default function App() {
             component={AllPlacesPage}
             options={({ navigation }) => ({
               title: '',
-              headerRight: ({tintColor}) => {
+              headerRight: ({ tintColor }) => {
                 return (
                   <Pressable
                     onPress={() => navigation.navigate('add')}
-                    style={({pressed}) => [pressed && styles.pressedButton]}>
-                    <Ionicons name="add" size={25} color={tintColor}/>
+                    style={({ pressed }) => [pressed && styles.pressedButton]}>
+                    <Ionicons name="add" size={25} color={tintColor} />
                   </Pressable>
                 )
               }
             })}
           />
-          <Stack.Screen name="add" component={AddPlacesPage} />
+          <Stack.Screen
+            name="add"
+            options={{
+              title: ''
+            }}
+            component={AddPlacesPage} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
